@@ -40,7 +40,7 @@
     height: 200px;
     border-radius: 50%;
     border: 7px solid white;
-    background-image: url('./images/me.jpg');
+    cursor: pointer;
 }
 
 .img-title {
@@ -111,10 +111,14 @@
     position: relative;
     display: flex;
     align-items: center;
-    box-shadow: 0 3px 5px gray;
+    box-shadow: 0 3px 8px gray;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+.container__explain {
+    list-style: none;
+    line-height: 40px;
+    color: #0DEE6D;
+}
 .container__sticker_hover {
     width: 80%;
     height: 200px;
@@ -175,11 +179,10 @@
 
 .container__content-list {
     width: 80%;
-    padding: 10px;
     color: #185a8d;
     line-height: 1.5em;
     font-size: 1.2em;
-    padding: 20px 0% 20px 10%;
+    padding: 20px 0 20px 10%;
 }
 
 .container__content-icon {
@@ -216,3 +219,12 @@
     text-decoration: none;
     color: #185a8d;
 }
+
+.container__link2:hover {
+    color: #07DBFF;
+}
+
+.container__link:hover {
+    color: #07DBFF;
+}
+
