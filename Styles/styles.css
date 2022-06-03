@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px auto;
+    width: 80vw;
+    border-radius: 8px;
+    background-color: #FEFEFE;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 5px black;
+    overflow: hidden;
+}
+
+.container__sidebar {
+    width: 30%;
+    z-index: 10;
+    padding-top: 30px;
+    color: white;
+    background-color: #08243A;
+    box-shadow: 4px 0 5px gray;
+    text-align: center;
+    line-height: 2em;
+}
+
+.container__main {
+    z-index: 1;
+    position: relative;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-box {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid white;
+    background-image: url('./images/me.jpg');
+}
+
+.img-title {
+    margin: 30px auto;
+    width: 50%;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: #001429;
+    text-align: center;
+}
+
+.name-title {
+    font-size: 2.4em;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.8em;
+}
+
+.profession-title {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+.container__contact {
+    width: 100%;
+    background-color: #001429;
+    display: flex;
+    font-size: 1.6em;
+    align-items: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.container__title-icon {
+    padding: 0 25px;
+    height: 45px;
+}
+
+.container__list-box {
+    margin: 10px auto;
+    width: 90%;
+    text-align: left;
+    padding: 10px 0 10px 20px;
+    font-size: 1.2em;
+}
+
+.icon {
+    height: 25px;
+}
+
+.data-list {
+    display: flex;
+    align-items: center;
+}
+
+.container__link {
+    text-decoration: none;
+    color: #A8DEFF;
+}
+
+.container__list {
+    list-style: none;
+}
+
+.container__maincontent {
+    width: 100%;
+    min-height: 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 5px gray;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container__sticker_hover {
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    left: -75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    padding: 50px;
+    text-align: center;
+
+
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 2px 5px gray;
+    
+    transition: transform .5s ease;
+    cursor: pointer;
+    font-size: 20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container__sticker_hover:hover {
+    transform: translate(90%, 0);
+}
+
+.container__sticker_hover:hover ~ .container__content-list {
+    visibility: hidden;
+}
+
+.container__sticker-header {
+    position: absolute;
+    color: white;
+    letter-spacing: 1px;
+    transform: rotate(-90deg);  
+    font-size: 18px; 
+}
+
+.education {
+    right: -30px;
+}
+
+.experience {
+    right: -32px;
+}
+
+.skills {
+    right: -20px;
+}
+
+.certeficates {
+    right: -35px;
+}
+
+.projects {
+    right: -20px;
+}
+
+.container__content-list {
+    width: 80%;
+    padding: 10px;
+    color: #185a8d;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    padding: 20px 0% 20px 10%;
+}
+
+.container__content-icon {
+    width: 20%;
+}
+
+.container__content-icon, .container__content-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__education {
+    background-color: #FA4C4C;
+}
+
+.container__experience {
+    background-color: #0DEE6D;
+}
+
+.container__skills {
+    background-color: #E67E22;
+}
+
+.container__certificate {
+    background-color: #9B59B6;
+}
+
+.container__projects {
+    background-color: #07DBFF;
+}
+
+.container__link2 {
+    text-decoration: none;
+    color: #185a8d;
+}
