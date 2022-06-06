@@ -228,3 +228,7 @@
     color: #07DBFF;
 }
 
+.projects-list {
+    list-style: none;
+}
+
